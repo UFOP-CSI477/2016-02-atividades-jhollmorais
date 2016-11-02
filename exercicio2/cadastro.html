@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Cadastro de Alunos(as)</title>
+  </head>
+  <body>
+
+    <h1>SISTEMA DE CONTROLE DE MATRICULA</h1>
+
+    <form class="form-horizontal" name="cadastro" action="confirma.html" method="post">
+
+      <div class="form-group">
+        <label for="nome" class="control-label col-sm-1">Nome</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" name="nome">
+        </div>
+
+        <label for="cpf" class="control-label col-sm-1">CPF</label>
+        <div class="col-sm-2">
+          <input type="tex" name="cpf" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="rua" class="control-label col-sm-1">Rua</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" name="rua">
+        </div>
+
+        <label for="numero" class="control-label col-sm-1">Número</label>
+        <div class="col-sm-1">
+          <input type="text" class="form-control" name="numero">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="cidade" class="control-label col-sm-1">Cidade</label>
+        <div class="col-sm-2">
+          <select class="form-control" name="cidade">
+            <option value="1">Joao Monlevade</option>
+            <option value="2">Mariana</option>
+            <option value="3">Ouro Preto</option>
+            <option value="4">Campos dos Goytacazes</option>
+            <option value="5">Guarulhos</option>
+          </select>
+        </div>
+
+        <label for="estado" class="control-label col-sm-1">Estado</label>
+        <div class="col-sm-1">
+          <select class="form-control" name="cidade">
+            <option value="1">MG</option>
+            <option value="2">RJ</option>
+            <option value="3">SP</option>
+          </select>
+        </div>
+
+        <label for="cep" class="control-label col-sm-1">CEP</label>
+        <div class="col-sm-2">
+          <input type="text" name="cep" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone" class="control-label col-sm-1">Telefone</label>
+        <div class="col-sm-2">
+          <input type="text" name="telefone" class="form-control">
+        </div>
+
+        <label for="celular" class="control-label col-sm-1">Celular</label>
+        <div class="col-sm-2">
+          <input type="text" name="celular" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="control-label col-sm-1">E-mail</label>
+        <div class="col-sm-4">
+          <input type="email" name="email" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="genero" class="control-label col-sm-1">Gênero</label>
+        <div class="col-sm-2">
+          <input type="radio" name="genero" value="F" class="radio-inline">Feminino
+          <input type="radio" name="genero" value="M" class="radio-inline">Masculino
+        </div>
+      </div>
+
+      Áreas de Interesse:<br>
+        <input type="checkbox" name="area"/>Desenvolvimento Web<br>
+        <input type="checkbox" name="area"/>Banco de Dados<br>
+        <input type="checkbox" name="area"/>Pesquisa<br>
+        <input type="checkbox" name="area"/>Redes<br>
+
+      <div class="form-group">
+        <label for="usuario" class="control-label col-sm-1">Usuário</label>
+        <div class="col-sm-2">
+          <input type="text" name="usuario" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="senha" class="control-label col-sm-1">Senha</label>
+        <div class="col-sm-2">
+          <input type="password" name="senha" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmar" class="control-label col-sm-1">Confirmar</label>
+        <div class="col-sm-2">
+          <input type="password" name="confirmar" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group col-sm-4">
+        <input type="submit" value="Cadastrar" class="btn btn-success"/>
+        <input type="reset" value="Limpar" class="btn"/>
+        <a href="menu.html" class="btn">VOLTAR AO MENU</a>
+      </div>
+
+    </form>
+  </body>
+</html>

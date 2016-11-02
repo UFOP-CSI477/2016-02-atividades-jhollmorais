@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="myCSS.css">
+
+    <title>Controle de Matricula</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h3>Sistema de controle de matrícula</h3>
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="menu.html">Menu</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="lista.html">Alunos</a></li>
+      </ul>
+    </div><br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1 align="center">Bem vindo ao Controle de Matrículas</h1>
+            <h4>Acompanhe seu desempenho acadêmico</h4>
+            <p>Notas de provas e trabalhos, faltas, coeficiente semestral.</p>
+            <h4>Encontre seus colegas</h4>
+            <p>Encontre aqui o e-mail de seu colega de classe.</p>
+            <h4>Repúblicas</h4>
+            <p>Informações sobre eventos, vagas disponíveis e novidades.</p>
+          </div>
+          <div class="col-sm-3">
+            <p align="center">Acessar</p>
+
+            <form class="form-horizontal" action="lista.html" method="post">
+              <div class="form-group">
+                <label for="usuario" class="control-label">Usuário</label>
+                <div>
+                  <input type="text" name="usuario" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="senha" class="control-label">Senha</label>
+                <div>
+                  <input type="password" name="senha" class="form-control">
+                </div>
+              </div>
+              <div class="form-group" align="center">
+                <input type="submit" value="Acessar" class="btn btn-success"/>
+                <input type="reset" value="Limpar" class="btn"/>
+              </div>
+            </form>
+          </div>
+
+
+        </div> <!--fimDoRow-->
+      </div> <!--fimDoContainer-->
+
+    <div class="rodape">
+      <p align="center">Jonathan Paulo de Morais<br>
+      Desenvolvedor em Sistemas web I</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Alunos(as)</title>
+  </head>
+  <body>
+
+    <h1>SISTEMA DE CONTROLE DE MATRICULA</h1>
+
+    <form name="cadastro" action="confirma.html" method="post">
+
+      Nome: <input type="text" name="nome"/><br><br>
+
+      Rua: <input type="text" name="rua"/>
+
+      N°: <input type="text" name="numero"/>
+
+      Complemento: <input type="text" name="complemento"/><br><br>
+
+      Cidade: <select name="cidade">
+        <option value="1">Joao Monlevade</option>
+        <option value="2">Mariana</option>
+        <option value="3">Ouro Preto</option>
+        <option value="4">Campos dos Goytacazes</option>
+        <option value="5">Guarulhos</option>
+      </select><br><br>
+
+      Estado: <select name="estado">
+        <option value="1">MG</option>
+        <option value="2">RJ</option>
+        <option value="3">SP</option>
+      </select><br><br>
+
+      CEP: <input type="text" name="cep"/><br><br>
+
+      Telefone: <input type="text" name="telefone"/><br><br>
+
+      Celular: <input type="text" name="celular"/><br><br>
+
+      e-mail: <input type="text" name="email"/><br><br>
+
+      CPF: <input type="number" name="cpf"/><br><br>
+
+      Gênero: <input type="radio" name="genero" value="F">Feminimo
+              <input type="radio" name="genero" value="M">Masculino<br><br>
+
+      Áreas de interesse:<br>
+      <input type="checkbox" name="area"/>Desenvolvimento Web<br>
+      <input type="checkbox" name="area"/>Banco de Dados<br>
+      <input type="checkbox" name="area"/>Pesquisa<br>
+      <input type="checkbox" name="area"/>Redes<br>
+
+      Usuário: <input type="text" name="usuario"/><br><br>
+
+      Senha: <input type="password" name="senha"/><br><br>
+
+      Confirmar senha: <input type="password" name="senha"/><br><br>
+
+      <input type="submit" value="Cadastrar"/>
+      <input type="reset" value="Limpar"/><br>
+
+    </form>
+
+    <a href="menu.html">VOLTAR AO MENU</a>
+
+  </body>
+</html>

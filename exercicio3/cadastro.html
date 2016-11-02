@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="myCSS.css">
+
+    <title>Cadastro de Alunos(as)</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h3>Sistema de controle de matrícula</h3>
+      <ul class="nav nav-tabs">
+        <li><a href="menu.html">Menu</a></li>
+        <li class="active"><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="lista.html">Alunos</a></li>
+      </ul><br>
+
+      <form class="form-horizontal" action="confirma.html" method="post" name="cadastro">
+
+          <div class="form-group">
+            <label for="nome" class="control-label col-sm-1">Nome</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="nome">
+            </div>
+          </div>
+
+            <div class="form-group">
+              <label for="cpf" class="control-label col-sm-1">CPF</label>
+              <div class="col-sm-4">
+                <input type="tex" name="cpf" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="rua" class="control-label col-sm-1">Rua</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" name="rua">
+              </div>
+
+              <label for="numero" class="control-label col-sm-1">Número</label>
+              <div class="col-sm-1">
+                <input type="text" class="form-control" name="numero">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cidade" class="control-label col-sm-1">Cidade</label>
+              <div class="col-sm-4">
+                <select class="form-control" name="cidade">
+                  <option value="0"></option>
+                  <option value="1">Joao Monlevade</option>
+                  <option value="2">Mariana</option>
+                  <option value="3">Ouro Preto</option>
+                  <option value="4">Campos dos Goytacazes</option>
+                  <option value="5">Guarulhos</option>
+                </select>
+              </div>
+
+              <label for="estado" class="control-label col-sm-1">Estado</label>
+              <div class="col-sm-1">
+                <select class="form-control" name="cidade">
+                  <option value="0"></option>
+                  <option value="1">MG</option>
+                  <option value="2">RJ</option>
+                  <option value="3">SP</option>
+                </select>
+              </div>
+
+              <label for="cep" class="control-label col-sm-1">CEP</label>
+              <div class="col-sm-2">
+                <input type="text" name="cep" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone" class="control-label col-sm-1">Telefone</label>
+              <div class="col-sm-4">
+                <input type="text" name="telefone" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="celular" class="control-label col-sm-1">Celular</label>
+              <div class="col-sm-4">
+                <input type="text" name="celular" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="control-label col-sm-1">E-mail</label>
+              <div class="col-sm-4">
+                <input type="email" name="email" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="genero" class="control-label col-sm-1">Gênero</label>
+              <div class="col-sm-4">
+                <input type="radio" name="genero" value="F" class="radio-inline">Feminino
+                <input type="radio" name="genero" value="M" class="radio-inline">Masculino
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="interesse" class="control-label col-sm-1">Interesse</label>
+              <div class="col-sm-5">
+                <input type="checkbox" name="area" class="checkbox-inline">Desenvolvimento Web</input>
+                <input type="checkbox" name="area" class="checkbox-inline">Banco de dados</input>
+                <input type="checkbox" name="area" class="checkbox-inline">Pesquisas</input>
+                <input type="checkbox" name="area" class="checkbox-inline">Redes</input>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="usuario" class="control-label col-sm-1">Usuário</label>
+              <div class="col-sm-2">
+                <input type="text" name="usuario" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="senha" class="control-label col-sm-1">Senha</label>
+              <div class="col-sm-2">
+                <input type="password" name="senha" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmar" class="control-label col-sm-1">Confirmar</label>
+              <div class="col-sm-2">
+                <input type="password" name="confirmar" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group col-sm-4">
+              <input type="submit" value="Cadastrar" class="btn btn-success"/>
+              <input type="reset" value="Limpar" class="btn"/>
+            </div>
+            
+      </form>
+    </div>
+  </body>
+</html>

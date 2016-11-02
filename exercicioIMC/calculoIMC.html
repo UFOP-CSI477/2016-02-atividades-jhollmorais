@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cálculo IMC</title>
+
+    <script>
+
+      function calcular(){
+
+          var alt = parseFloat(document.calculoimc.altura.value);
+          var pes = parseFloat(document.calculoimc.peso.value);
+          var imc = pes / (alt * alt);
+
+          if (imc < 18.5) {
+            window.alert("Você está abaixo do peso ideal.");
+          } else if (imc < 25) {
+            window.alert("Parabéns! Você está no peso ideal.");
+          } else if (imc < 30) {
+            window.alert("Você está levemente acima do peso.");
+          } else if (imc < 35) {
+            window.alert("Obesidade grau 1");
+          } else if (imc < 40) {
+            window.alert("Obesidade grau 2 (severa)");
+          } else {
+            window.alert("Obesidade grau 3 (móbida)");
+          }
+
+          window.alert("Considerando sua altura de " + alt + "m seu peso ideal deve ser no máximo " + (24.9 * alt * alt));
+     }
+    </script>
+
+
+  </head>
+  <body>
+
+    <form name="calculoimc" action="#">
+
+    Informe sua altura <input name="altura">
+    Informe seu peso <input type="text" name="peso">
+    <button type="button" onclick="calcular()">Calcular IMC</button>
+
+  </form>
+
+  </body>
+</html>
